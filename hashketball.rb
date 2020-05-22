@@ -198,7 +198,6 @@ def big_shoe_rebounds
       if playerhash[:shoe] > maxshoe
         maxshoe = playerhash[:shoe]
         bigfootboards = playerhash[:rebounds]
-        puts "Bigfoot is now #{playerhash[:player_name]} with size #{playerhash[:shoe]}s and #{playerhash[:rebounds]} boards. Bigfootboards = #{bigfootboards}"
       end
     }
   }

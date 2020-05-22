@@ -197,6 +197,7 @@ def big_shoe_rebounds
     teamhash[:players].each { |playerhash|
       if playerhash[:shoe] > maxshoe
         bigfootboards = playerhash[:rebounds]
+        puts "Bigfoot is now #{playerhash[:player_name]} with #{playerhash[:rebounds]} boards. Bigfootboards = #{bigfootboards}"
       end
     }
   }

@@ -189,12 +189,14 @@ def player_stats(in_name)
   }
 end
 
-def shoe_size(in_name)
+def big_shoe_rebounds
   data = game_hash
+  maxshoe = 0
+  bigfootboards = 0
   data.each { |team, teamhash|
     teamhash[:players].each { |playerhash|
-      if playerhash[:player_name] == in_name
-        return playerhash[:shoe]
+      if playerhash[:shoe] > maxshoe
+        bigfootboards = playerhash[:rebounds]
       end
     }
   }
